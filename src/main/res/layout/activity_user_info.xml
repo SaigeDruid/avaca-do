@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:visibility="visible"
+    tools:context=".UserInfo"
+    tools:visibility="visible">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="406dp"
+        android:layout_height="279dp"
+        app:srcCompat="@drawable/avacado" />
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="378dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:text="Welcome"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="20dp"
+        app:srcCompat="@drawable/avatar" />
+
+    <Button
+        android:id="@+id/btnSettings"
+        android:layout_width="194dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="200dp"
+        android:background="@color/colorAccent"
+        android:text="Settings"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/btnSearchInterests"
+        android:layout_width="194dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="340dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="200dp"
+        android:background="@color/colorAccent"
+        android:text="Search Interests"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="166dp"
+        android:layout_height="42dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:gravity="center"
+        android:text="Other Halves"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="8dp"
+        android:scrollbars="vertical" />
+
+
+
+
+
+</RelativeLayout>
